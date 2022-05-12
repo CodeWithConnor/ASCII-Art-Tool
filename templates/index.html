@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII-Art-Web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+<div class="header">
+    <text>ASCII-Art-Web: A Simple ASCII Art Generator 🎨</text>
+</div>
+
+<!-- Ascii-Art-Web Title/Description Box -->
+<div class="parent-box">
+    <div class="child-box">
+        <h3>ASCII-Art-Web</h3>
+        <p>Please select your text style, enter your desired text and click generate.</p>
+        
+        <!-- Horizontal Banner Radio Box Div -->
+        <div class="horizontal-box">
+            <div class="radio">
+                <form method="POST" action="/ascii-art">
+                    <input type="radio" id="standard" name="banner" value="standard"
+                            checked>
+                    <label for="standard">Standard</label>
+            </div>
+                
+                    <div class="radio">
+                        <input type="radio" id="shadow" name="banner" value="shadow">
+                        <label for="shadow">Shadow</label>
+                    </div>
+                
+                    <div class="radio">
+                        <input type="radio" id="thinkertoy" name="banner" value="thinkertoy">
+                        <label for="thinkertoy">Thinkertoy</label>
+                    </div>
+        </div>
+
+        <!-- Text Input Box -->
+        <div class="form-box">
+            <label for="fname">Text:</label>
+            <input style="margin-left:6px" name="text" type="text" value="" /><br>
+        </div>
+    </div>
+
+    <!-- Generate Art Box -->
+    <div class="btn-group">
+        <input class="button" type="submit" value="Generate Art" onclick="displayArt()" />
+        <pre>{{.Asciiart}}</pre>
+                </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

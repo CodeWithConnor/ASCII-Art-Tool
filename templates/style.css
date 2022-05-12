@@ -1,0 +1,94 @@
+* {
+    font-family: Arial;
+    text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.header {
+  overflow: hidden;
+  background: linear-gradient(to left, #b473f4, #cb83ce, #e191a9);
+  padding: 12px 10px;
+  color: #FFFFFF;
+}
+
+.form-box {
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+  color: #FFFFFF;
+}
+
+text {
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-weight: 100;
+}
+
+p {
+  margin: 10px;
+  color: #FFFFFF;
+  opacity: 85%;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+.horizontal-box {
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+.button {
+  border-radius: 6px;
+  background-color: #5865F2;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 10px 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+div.parent-box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: #2F3136;
+  /* so the buttons go under the title box */
+  flex-direction: column;
+}
+
+.child-box { 
+  background: #36393F;
+  width: 600px; 
+  border: 1px;
+  padding: 1em;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.art-output-box {
+  color: #FFFFFF;
+  opacity: 85%;
+  background: #36393F;
+  /* Hidden until button click */
+  display: none;
+}
